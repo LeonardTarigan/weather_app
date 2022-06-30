@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --white: #e6e6e6;
+  --ruby: #e40066;
+  --orange: #ff9f1c;
+  --blue: #49c6e5;
+  --tosca: #3aafb9;
+  --poppins: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(../img/rain.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--white);
+  font-family: var(--poppins);
+}
+
+.container {
+  backdrop-filter: blur(12px) brightness(0.5);
+  margin-top: 7em;
+  padding: 2rem;
+  width: 40em;
+  height: fit-content;
+  min-height: 20em;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.search {
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.starter p {
+  font-size: 1.5rem;
+}
+
+input {
+  margin-right: 1rem;
+  padding: 5px 15px;
+  width: 50%;
+  border-radius: 20px;
+  border-color: transparent;
+  background: #7c7c7c2b;
+  color: var(--white);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.btn {
+  border: none;
+  display: flex;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  opacity: 0.8;
+  background-color: transparent;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.btn:hover {
+  opacity: 1;
+  background-color: #7c7c7c2b;
+}
+
+.btn svg {
+  width: 1.2rem;
+  fill: var(--white);
+}
+
+.temp {
+  font-weight: 400 !important;
+  font-size: 2.5rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.weather {
+  text-transform: capitalize;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 3rem;
+}
+
+.humidity,
+.wind {
+  margin-left: 0.6rem;
+}
