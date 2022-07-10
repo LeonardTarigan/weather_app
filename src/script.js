@@ -24,8 +24,6 @@ let weather = {
         document.querySelector(".temp").innerText = temp + " °C";
         document.querySelector(".humidity").innerText = `Humidity : ${humidity}%`;
         document.querySelector(".wind").innerText = `Wind speed : ${speed} km/h`;
-
-        document.body.style.backgroundImage = `url('https://source.unsplash.com/1600x900/?${name}-city')`
     },
     search: function () {
         this.fetchWeather(document.querySelector(".search-bar").value)
@@ -40,4 +38,15 @@ document.querySelector(".search-bar").addEventListener("keyup", (event) => {
     if (event.key == "Enter") {
         weather.search();
     }
+});
+
+VANTA.CLOUDS2({
+    el: "#vanta",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.0,
+    minWidth: 200.0,
+    speed: 0.8,
+    texturePath: "./img/noise.png",
 });
