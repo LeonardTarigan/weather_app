@@ -10,11 +10,10 @@
 }
 
 body {
-  /* background-image: url(../img/rain.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed; */
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--white);
   font-family: var(--poppins);
 }
@@ -28,9 +27,10 @@ body {
 
 .container {
   backdrop-filter: blur(12px) brightness(0.5);
-  margin-top: 7em;
   padding: 2rem;
-  width: 40em;
+  margin-inline: 1rem;
+  min-width: fit-content;
+  max-width: 40rem;
   height: fit-content;
   min-height: 20em;
   border-radius: 20px;
@@ -113,4 +113,10 @@ input:focus {
 .humidity,
 .wind {
   margin-left: 0.6rem;
+}
+
+@media only screen and (max-width: 580px) {
+  .search-bar {
+    width: 80%;
+  }
 }
